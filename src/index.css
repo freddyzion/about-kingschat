@@ -1,0 +1,103 @@
+@font-face {
+  src: url(/fonts/aerospace.ttf);
+  font-family: aerospace;
+}
+@font-face {
+  src: url(/fonts/deltha.ttf);
+  font-family: deltha;
+}
+@font-face {
+  src: url(/fonts/dm-sans.ttf);
+  font-family: dm-sans;
+}
+@font-face {
+  src: url(/fonts/gobitta.otf);
+  font-family: gobitta;
+}
+@font-face {
+  src: url(/fonts/kultum.otf);
+  font-family: kultum;
+}
+@font-face {
+  src: url(/fonts/molgan.otf);
+  font-family: molgan;
+}
+@font-face {
+  src: url(/fonts/nunito.ttf);
+  font-family: nunito;
+}
+@font-face {
+  src: url(/fonts/toxigenesis.otf);
+  font-family: toxigenesis;
+}
+
+.font-aero {
+  font-family: aerospace;
+}
+.font-deltha {
+  font-family: deltha;
+}
+.font-dm {
+  font-family: dm-sans;
+}
+.font-gobitta {
+  font-family: gobitta;
+}
+.font-kultum {
+  font-family: kultum;
+}
+.font-nunito {
+  font-family: nunito;
+}
+.font-molgan {
+  font-family: molgan;
+}
+.font-toxi {
+  font-family: toxigenesis;
+}
+
+.animate-slide-up {
+  animation: slide-up 500ms ease both;
+}
+
+@supports (animation-timeline: scroll()) {
+  .fade-in {
+    opacity: 0;
+    transform: translateY(80px);
+    animation: fadeIn 1.2s ease-out forwards;
+    animation-timeline: view();
+    animation-range: entry 0% entry 60%;
+  }
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+.animation-delay-100 {
+  animation-delay: 100ms;
+}
+.animation-delay-200 {
+  animation-delay: 200ms;
+}
+.animation-delay-300 {
+  animation-delay: 300ms;
+}
+.animation-delay-400 {
+  animation-delay: 400ms;
+}
+
+@keyframes slide-up {
+  from {
+    transform: translateY(1rem);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
